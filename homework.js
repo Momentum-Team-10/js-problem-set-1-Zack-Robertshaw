@@ -11,7 +11,7 @@ leftover = candies%people
 function greeting(name) {
     return 'Hello, ' + name + '!'
   }
-  greeting (chase)
+  greeting (Chase)
   greeting (Kendall)
 
 // 4. Create a function called isOdd that, given a number, will
@@ -65,9 +65,16 @@ function fahrenheitToKelvin (number){
     }
 
 
+
 // 9. Create a function called lesser that takes two numbers as
 // arguments and returns the lesser of them. This function should
 // use an if/else statement.
+
+function lesser(number1,number2){
+    if (number1 < number2){return number1}
+    else {return number2}
+
+}
 
 // 10. Create a function called multigreeting that takes a name
 // and a language code and returns a version of "Hello, <name>!"
@@ -80,6 +87,14 @@ function fahrenheitToKelvin (number){
 // eo - Saluton, <name>!
 //
 // If any other language code is used, return nothing.
+
+function multigreeting (language,name){
+    if (language===en){return 'Hello ' + name + '!'}
+    else if (language===es){return '!Hola, ' + name + '!'}
+    else if (language===fr){return 'Bonjour, ' + name + '!'}
+    else (language===eo); {return 'Saluton ' + name + '!'}
+}
+
 
 // 11. The greatest common divisor (https://en.wikipedia.org/wiki/Greatest_common_divisor)
 // is the largest integer that, given two other integers, can be divided into them. For
